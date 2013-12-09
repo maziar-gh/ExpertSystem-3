@@ -1,0 +1,28 @@
+-Determinando si puedes ganar
+posicion-oponente rey <posicion>;Cual es la <posicion> del rey oponente?
+ataca si <pieza> a <posicion>;*Puedes atacar <posicion> con cualquier <pieza>?
+-Proteccion de piezas atacadas (Verifica primero el rey)
+posicion-oponente <atacante> <posicion-a>|oponente <atacante>;Cual es la <posicion-a> del <atacante>?
+posicion <pieza> <posicion-p>|ataca si <atacante> <posicion-p>;Cual es la <posicion-p> de la <pieza> atacada?
+mover <pieza-a> a <posicion-a>;*Puedes mover una <pieza-a> aleada a la <posicion-a>?
+protegida <posicion-a>;*Existe alguna pieza aliada diferente a <pieza-a> que ataque a <posicion-a>?
+obstruye <pieza-al> <posicion-obs> <atacante> <posicion-a>;*Puedes obstruir <posicion-obs> a <atacante> con alguna <pieza-al> aliada?
+ataca no <oponente> <posicion-n>|oponente <oponente>|mueve <pieza> a <posicion-n>;+Pensando en retirar <pieza> : Ataca algun <oponente> la <posicion-n> a donde moveras <pieza>?
+-Provocando que el oponente abra camino atacando una de sus piezas
+posicion-oponente <oponente> <posicion-o>;Cual es la <posicion-o> de la pieza <oponente> que quieres intimidar?
+mover <pieza> a <posicion-p>|ataca si <pieza> a <posicion-o> desde <posicion-p>;*Es <posicion-p> una posicion desde donde <pieza> ataca la <posicion-o>?
+protegida <posicion-p>;*Existe alguna pieza aliada diferente a <pieza> que ataque a <posicion-p>?
+-Hacer un movimiento simple
+mover <pieza> a <posicion-p>;*Puedes mover una <pieza> a <posicion-p>?
+ataca no <oponente> a <posicion-p>|oponente <oponente>;+Existe algun <oponente> que ataque <posicion-p>?
+protegida <posicion-p>;*Existe alguna pieza aliada diferente a <pieza> que ataque a <posicion-p>?
+-Proteger una pieza
+mover <pieza> a <posicion-p>|posicion <aliada> <posicion-a>|diferente <pieza> <aliada>|ataca si <pieza> a <posicion-a> desde <posicion-p>;Es <posicion-p> una posicion desde donde <pieza> ataca la <posicion-a> donde esta una pieza <aliada>?
+ataca no <oponente> a <posicion-p>|oponente <oponente>;+Existe algun <oponente> que ataque <posicion-p>?
+-Provocar perdida de piezas
+mover <pieza> a <posicion-p>|ataca si <oponente> a <posicion-p>|oponente <oponente>;*Puedes mover <pieza> dentro de una de una <posicion-p> que ataque una pieza <oponente>?
+menor-igual-valor <pieza> <oponente>;*Es <oponente> de menor o igual valor que <pieza>?
+protegida <posicion-p>;*Existe alguna pieza aliada diferente a <pieza> que ataque a <posicion-p>?
+-Tomar una pieza que este a la vista
+posicion-oponente <oponente> <posicion>|mover <pieza> <posicion>;Puedes mover alguna <pieza> aliada a la <posicion> de una pieza <oponente>?
+protegida <posicion>;*Existe alguna pieza aliada diferente a <pieza> que ataque a <posicion>?

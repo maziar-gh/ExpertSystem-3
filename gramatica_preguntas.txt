@@ -1,0 +1,6 @@
+Seccion ::= '-' <CADENA> '\n' (Tupla)+
+Tupla ::= ListaAtomos ';' Pregunta '\n'
+ListaAtomos ::= Atomo ['|' ListaAtomos]
+Atomo ::= <PALABRA> (Variable|<PALABRA>)*
+Variable ::= '<' <PALABRA> '>'
+Pregunta ::= ['*'|'+'] <CADENA>

@@ -1,0 +1,28 @@
+Seccion 1: muy simple
+Seccion 2:
+1. Cual es la [<posicion-a>,D3] del [<atacante>,alfil]?
+2. Cual es la [<posicion-p>,F5] de la [<pieza>,alfil] atacada?
+3. Puedes mover una [<pieza-a>,caballo] aleada a la [<posicion-a>,D3]? R=Si
+4. Existe alguna pieza aliada diferente a [<pieza-a>,caballo] que ataque a [<posicion-a>,D3]? R=Si
+5. Puedes obstruir [<posicion-obs>,E4] a [<atacante>,alfil] con alguna [<pieza-al>,torre] aliada? R=Si
+6. Pensando en retirar [<pieza>,alfil] : Ataca algun [<oponente>,vacio] la [<posicion-n>,G4] a donde
+moveras [<pieza>,alfil]? R=No
+
+Seccion 3:
+1. Cual es la [<posicion-o>,D3] de la pieza [<oponente>,alfil] que quieres intimidar?
+2. Es [<posicion-p>,D8] una posicion desde donde [<pieza>,torre] ataca la [<posicion-o>,D3]? R=Si
+3. Existe alguna pieza aliada diferente a [<pieza>,torre] que ataque a [<posicion-p>,D8]?
+
+Seccion 4: simple
+Seccion 5:
+Es [<posicion-p>,G6] una posicion desde donde [<pieza>,peon] ataca la [<posicion-a>,F5] donde esta una pieza [<aliada>,alfil]?
+Existe algun [<oponente>,vacio] que ataque [<posicion-p>,G6]? R=No
+
+Seccion 6:
+Puedes mover [<pieza>,alfil] dentro de una de una [<posicion-p>,F5] que ataque una pieza [<oponente>,alfil]? R=Si
+Es [<oponente>,alfil] de menor o igual valor que [<pieza>,alfil]? R=Si
+Existe alguna pieza aliada diferente a [<pieza>,alfil] que ataque a [<posicion-p>,F5]? R=Si
+
+Seccion 7:
+Puedes mover alguna [<pieza>,caballo] aliada a la [<posicion>,D3] de una pieza [<oponente>,alfil]?
+Existe alguna pieza aliada diferente a [<pieza>,caballo] que ataque a [<posicion>,D3]? R=Si
